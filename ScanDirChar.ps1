@@ -9,13 +9,13 @@ na linha do $rootFolder.
 Voce tambem pode indicar ".\" caso queira que ele faça o scan no local que o arquivo de script se localiza.
 
 Para um funcionamento correto, voce deve abrir o powershell no local que se encontra o arquivo 
-e executar com " .\ScanDirChar3.ps1 | Out-File -FilePath .\resultado-ScanDirChar3.txt ".
+e executar com " .\ScanDirChar.ps1 | Out-File -FilePath .\resultado-ScanDirChar.txt ".
 desta forma, ao finalizar a execução do script, ele ira salvar a saida no arquivo indicado.
 
 #>
 
 # Defina a pasta raiz que você deseja escanear
-$rootFolder = "E:\"
+$rootFolder = ".\"
 
 # Função para listar diretórios com mais de 255 caracteres
 function Get-LongPaths {
